@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Sky School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Login Protection -->
+    <script>
+        if(localStorage.getItem('loggedIn') !== 'true'){
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+    <div class="logo-area">
+        <img src="logo.png" alt="Open Sky School Logo">
+        <h1>Open Sky School</h1>
+    </div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+    <section class="section">
+        <h2>Welcome</h2>
+        <p>Open Sky provides a complete system for education. Bring your child to the route of knowledge at an affordable budget in Kasur.</p>
+    </section>
+
+    <section class="section">
+        <h2>Why Choose Open Sky?</h2>
+        <p>We offer:</p>
+        <ul>
+            <li>A clean environment</li>
+            <li>Affordable fees</li>
+            <li>Oxford syllabus</li>
+            <li>Qualified and co-operative teachers</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Admissions Open 2026</h2>
+        <p>Date: Feb 1st, 2026 to March 1st, 2026</p>
+        <p>50% discount during this period. Contact now and build your child's future today.</p>
+    </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+  &copy; 2023 Open Sky School
+</footer>
+
+<!-- ================= LOGOUT BUTTON ================= -->
+<button id="logout-btn" onclick="logout()">Logout</button>
+
+<!-- ================= CREDIT BADGE ================= -->
+<div class="credit-badge">Ahmi Editz</div>
+
+<!-- ================= LOGOUT SCRIPT ================= -->
+<script>
+function logout() {
+    localStorage.removeItem('loggedIn');
+    window.location.href = 'login.html';
+}
+</script>
+
+</body>
+</html>
