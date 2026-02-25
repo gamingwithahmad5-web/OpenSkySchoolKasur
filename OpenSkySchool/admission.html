@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<script>
+    // Check login status
+    if(localStorage.getItem('loggedIn') !== 'true'){
+        window.location.href = 'login.html'; // redirect to login if not logged in
+    }
+</script>
+<html>
+<head>
+    <title>Admission - Open Sky School</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="credit-badge">Ahmi Editz</div>
+<body>
+
+<header>
+    <img src="logo.png" alt="Open Sky School Logo">
+    <h1>Admission Information</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="box">
+        <h2>How to Apply</h2>
+        <p>Admissions are open for classes from P.G to Class 10. Interested students should submit the application form online or at the school office.</p>
+    </div>
+
+    <div class="box">
+        <h2>Requirements</h2>
+        <ul>
+            <li>Completed application form</li>
+            <li>Copy of previous academic records</li>
+            <li>Recent passport-size photo</li>
+            <li>Birth certificate</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Important Dates</h2>
+        <p>Admission starts: Februray 1, 2026</p>
+        <p>Last date to apply: March 1, 2026</p>
+        <p>50% off For Admission on these days.</p>
+    </div>
+</main>
+
+<footer>
+    © 2023 Open Sky School
+</footer>
+
+</body>
+</html>

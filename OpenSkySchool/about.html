@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<script>
+    // Check login status
+    if(localStorage.getItem('loggedIn') !== 'true'){
+        window.location.href = 'login.html'; // redirect to login if not logged in
+    }
+</script>
+<html>
+<head>
+    <title>About - Open Sky School</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="credit-badge">Ahmi Editz</div>
+<body>
+
+<header>
+    <img src="logo.png" alt="Open Sky School Logo">
+    <h1>About Open Sky School</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="card">
+        <h2>Our Mission</h2>
+        <p>To provide high-quality education in a disciplined and supportive environment, nurturing students to achieve their full potential.</p>
+    </div>
+
+    <div class="card">
+        <h2>Our Vision</h2>
+        <p>To develop confident, responsible, and knowledgeable individuals prepared for future challenges.</p>
+    </div>
+    <div class="card">
+        <h2>Our Core Values</h2>
+        <p>Not Yet :).</p>
+    </div>
+</main>
+
+<footer>
+    © 2023 Open Sky School
+</footer>
+
+</body>
+</html>

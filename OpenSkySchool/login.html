@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Open Sky School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: #e6f0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .login-box h2 {
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            width: 95%;
+            padding: 10px;
+            background: #0d6efd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0a58ca;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<div class="credit-badge">Ahmi Editz</div>
+<body>
+
+<div class="login-box">
+    <h2>Open Sky School System</h2>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+    <p class="error" id="error-msg"></p>
+</div>
+
+<script>
+    function login() {
+        const user = document.getElementById('username').value;
+        const pass = document.getElementById('password').value;
+
+        // Your login credentials
+        if(user === 'Ahmi' && pass === '132023'){
+            // Save login state
+            localStorage.setItem('loggedIn', 'true');
+            window.location.href = 'index.html'; // redirect to home page
+        } else {
+            document.getElementById('error-msg').innerText = 'Incorrect username or password';
+        }
+    }
+</script>
+
+</body>
+</html>
